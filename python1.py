@@ -10,6 +10,15 @@ if szam % 2 == 0:
 else:
     print("A szám páratlan.")
 
+#2.1 Kérj be egy számot, és döntsd el, hogy páros-e.
+szam = int(input("Adj meg egy számot: "))
+while(szam==0):
+    szam = int(input("Adj meg egy számot: "))
+if szam % 2 == 0:
+    print("A szám páros.")
+else:
+    print("A szám páratlan.")
+
 #3 Kérj be három számot, és írd ki melyik a legnagyobb.
 szam1 = int(input("Kérem az első számot: "))
 szam2 = int(input("Kérem a második számot: "))
