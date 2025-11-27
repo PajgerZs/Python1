@@ -33,3 +33,11 @@ osszeg = 0
 for i in range(1, N + 1):
     osszeg += i
 print("Az 1 és", N, "közötti számok összege:", osszeg)
+
+#6 Kérj be 5 darab számot, tedd őket listába, majd számold ki az átlagukat.
+szamok = []
+for i in range(5):
+    szam = float(input(f"Kérem a(z) {i+1}. számot: "))
+    szamok.append(szam)
+atlag = sum(szamok) / len(szamok)
+print(atlag)
