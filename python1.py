@@ -56,3 +56,11 @@ for i in range(db):
     szamok.append(szam)
 print("Legnagyobb szám:", max(szamok))
 print("Legkisebb szám:", min(szamok))
+
+#8 Kérj be egy számot és döntsd el, hogy benne van-e az előre adott listában.
+szamok = [1, 2, 3, 4, 5]
+keresettSzam = int(input("Kérek egy számot: "))
+if keresettSzam in szamok:
+    print("Ez a szám benne van a listában.")
+else:
+    print("Ez a szám nincs benne a listában.")
