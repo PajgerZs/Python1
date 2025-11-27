@@ -24,6 +24,12 @@ print("A legnagyobb szám: ", legnagyobb)
 
 #4 Kérj be egy N értéket, majd írd ki 1-től N-ig a számokat egy ciklussal.
 N = int(input("Kérem az N értékét: "))
-
 for i in range(1, N + 1):
-    print(i, end=" ")
+    print(i)
+
+#5 Kérj be egy N számot, majd számold ki a közötti számok összegét.
+N = int(input("Kérem az N értékét: "))
+osszeg = 0
+for i in range(1, N + 1):
+    osszeg += i
+print("Az 1 és", N, "közötti számok összege:", osszeg)
