@@ -48,7 +48,7 @@ print("A lista:", szamok)
 print("Legnagyobb szám:", max(szamok))
 print("Legkisebb szám:", min(szamok))
 
-#7.1 Kérj be egész számokkal, majd írd ki: a legnagyobb értéket, a legkisebb értéket.
+#7.1 Kérj be egész számokat, majd írd ki: a legnagyobb értéket, a legkisebb értéket.
 szamok = []
 db = int(input("Hány darab számot szeretnél megadni? "))
 for i in range(db):
