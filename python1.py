@@ -41,3 +41,18 @@ for i in range(5):
     szamok.append(szam)
 atlag = sum(szamok) / len(szamok)
 print(atlag)
+
+#7 Adj meg egy listát tetszőleges egész számokkal, majd írd ki: a legnagyobb értéket, a legkisebb értéket
+szamok = [1, 2, 3, 4, 5] 
+print("A lista:", szamok)
+print("Legnagyobb szám:", max(szamok))
+print("Legkisebb szám:", min(szamok))
+
+#7.1 Adj meg egy listát tetszőleges egész számokkal, majd írd ki: a legnagyobb értéket, a legkisebb értéket
+szamok = []
+db = int(input("Hány darab számot szeretnél megadni? "))
+for i in range(db):
+    szam = int(input(f"Kérem a(z) {i+1}. számot: "))
+    szamok.append(szam)
+print("Legnagyobb szám:", max(szamok))
+print("Legkisebb szám:", min(szamok))
