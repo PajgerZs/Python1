@@ -21,3 +21,9 @@ if szam3 > legnagyobb:
     legnagyobb = szam3
 
 print("A legnagyobb szám: ", legnagyobb)
+
+#4 Kérj be egy N értéket, majd írd ki 1-től N-ig a számokat egy ciklussal.
+N = int(input("Kérem az N értékét: "))
+
+for i in range(1, N + 1):
+    print(i, end=" ")
