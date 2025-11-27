@@ -31,6 +31,16 @@ if szam3 > legnagyobb:
 
 print("A legnagyobb szám: ", legnagyobb)
 
+#3.1 Kérj be három számot, és írd ki melyik a legnagyobb.
+tomb = []
+for i in range(3):
+    tomb.append(int(input(f"Kérem az {i}. számot: ")))
+max = tomb[0]
+for i in range(3):
+    if tomb[i] > max:
+        max = tomb[i]
+print(f"A legnagyobb szám a", max)
+
 #4 Kérj be egy N értéket, majd írd ki 1-től N-ig a számokat egy ciklussal.
 N = int(input("Kérem az N értékét: "))
 for i in range(1, N + 1):
@@ -66,6 +76,19 @@ for i in range(db):
 print("Legnagyobb szám:", max(szamok))
 print("Legkisebb szám:", min(szamok))
 
+#7.2 Adj meg egy listát tetszőleges egész számokkal, majd írd ki: a legnagyobb értéket, a legkisebb értéket.
+lista = [1, 2, 3, 4, 5]
+max = lista[0]
+for i in range(len(lista)):
+    if lista[i] > max:
+        max = lista[i]
+print("Legnagyobb szám a {max}")
+min = lista[0]
+for i in range(len(lista)):
+    if lista[i] > min:
+        min = lista[i]
+print("Legkisebb szám a {min}")
+
 #8 Kérj be egy számot és döntsd el, hogy benne van-e az előre adott listában.
 szamok = [1, 2, 3, 4, 5]
 keresettSzam = int(input("Kérek egy számot: "))
@@ -73,3 +96,37 @@ if keresettSzam in szamok:
     print("Ez a szám benne van a listában.")
 else:
     print("Ez a szám nincs benne a listában.")
+
+#8.1 Kérj be egy számot és döntsd el, hogy benne van-e az előre adott listában.
+lista = [3,7,4,2,9,11,77,22]
+
+szam = int(input("Kérek egy egész számot:"))
+
+if szam in lista:
+     print("Van találat.")
+else:
+    print("Nincs találat.")
+
+"""
+vane = False
+
+for i in range(len(lista)):
+    if lista[i] == szam:
+        vane = True
+        break
+
+if vane == True:
+    print("Van találat.")
+else:
+    print("Nincs találat.")
+"""
+
+#Adott egy lista számokkal. Készíts új listát, amelyben csak a páros számok szerepelnek.
+lista = [3,5,1,2,9,22,16,7]
+paros = []
+
+for i in range(len(lista)):
+    if lista[i] %2 ==0:
+        paros.append(lista[i])
+
+print(paros)
