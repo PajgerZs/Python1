@@ -130,3 +130,4 @@ for i in range(len(lista)):
         paros.append(lista[i])
 
 print(paros)
+
